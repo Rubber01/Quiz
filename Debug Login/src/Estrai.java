@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.Scanner;
+
 
 public class Estrai 
 {
@@ -50,34 +52,17 @@ public class Estrai
 		}
     	return l;
     }
-    public String[] getFromFile(String file, int l) {
-        //String file = "C:\\Users\\Utente\\Desktop\\okbot.txt"; 
-        
-    	String[] arrayFile = new String[l];
-
-        BufferedReader reader = null;
-        String line = "";
-        
-        try 
+    
+    public String[] getFromFile(String file, int l) throws IOException  {
+    	Scanner scanner = new Scanner(new File(file)); //creo uno scanner per il file 
+        String [] a = new String [100]; //inizializzo l'array
+        int i = 0; //contatore
+        while(scanner.hasNextLine()) //finché c'è qualcosa
         {
-            reader = new BufferedReader(new FileReader(file));
-            while ((line = reader.readLine()) != null) 
-                    {
-                       String [] row = line.split("\n");
-                       int i=0;
-                       for(String index : row) 
-                       {
-                           arrayFile[i]=index;
-                           i++;
-                       }
-                    }
+             a[i++] = scanner.nextLine();  //l'array tall di posizione i è uguale alla riga i+1
         }
-        catch (Exception e) 
-        {
-            e.printStackTrace();
-        }
-		return arrayFile;
-       
-    }
-
+        return a; //passo l'array come valore output 
+  }
 }
+
+

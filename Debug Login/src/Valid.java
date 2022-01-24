@@ -41,7 +41,7 @@ public class Valid {
 	
 	public boolean checkCredentials(String nome, String pw) throws IOException {
 	     String usernametxt = Registrazione.getUsersNameFile();
-	     String passwordtxt = Registrazione.getPasswordNameFile();
+	     
 
 	    if (nome == null || pw == null  || nome.isEmpty() || pw.isEmpty()) {
 
@@ -49,7 +49,7 @@ public class Valid {
 	    }
 
 	    try ( Reader fileReader = new FileReader(usernametxt);
-	          Reader passwordReader = new FileReader(passwordtxt)) {
+	          ) {
 
 	        Scanner userScan = new Scanner(fileReader);
 	        Scanner passwordScan = new Scanner(passwordReader);

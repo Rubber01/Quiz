@@ -1,0 +1,67 @@
+Select the language to use:
+Italian(Italiano) English
+not rate us badly, we are programmers not experts in languages*
+very interesting as a language but I don't know it
+Welcome!
+You look like you're new
+Do you want me to explain how the program works?
+Very simply this ministerial application 
+serves to create and take quizzes 
+through a login you can enter as a professor or student 
+teachers can: 
+create quizzes 
+correct quizzes 
+make new quizzes 
+see the ratings they had given to previous quizzes 
+students can:
+take quizzes 
+view the results of old quizzes 
+repeat old quizzes
+ah... fine -_-
+Btw, Are you already registered?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Benvenuto!
+Hai l'aria di essere nuovo
+Vuoi che ti spieghi come funziona il programma?
+Molto semplicemente questa applicazione ministeriale
+serve per creare e fare quiz
+attraverso un login si può entrare come professore o studente
+i docenti possono:
+creare quiz
+correggere i quiz
+fare nuovi quiz
+vedere le valutazioni che avevano dato agli scorsi quiz
+gli studenti possono
+fare quiz
+vedere i risultati dei vecchi quiz
+rifare i vecchi quiz
+Btw, sei già registrato?
+ah... ok -_-

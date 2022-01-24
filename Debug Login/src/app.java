@@ -1,47 +1,59 @@
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class app {
 	registration registrator = new registration();
- 	Estrai es=new Estrai();String[] arrayFile = new String[es.getLenghtFile(registrator.getPasswordNameFile())];
+ 	Estrai es=new Estrai();
+ 	private String fileTextPassword = "Text.txt";
     Valid validator= new Valid();
+    int lt=es.getLenghtFile(fileTextPassword);
+    
+    
+    
 	Scanner scan = new Scanner(System.in);
-	public void start() throws Eccezioni, IOException{ 
+	public void start() throws Eccezioni, IOException, FileNotFoundException{ 
+		String[] text = es.getFromFile(fileTextPassword,lt);
+		int textValue=0;
 		String choose = "";
 		do {
 		choose = "";
-		System.out.println("Select the language to use\nItalian(Italiano)\nEnglish\n*do not rate us badly, we are programmers not experts in languages*");
+		System.out.println(text[textValue]); //stringa 0
 		choose=scan.nextLine();
 		if(choose.equals("Italiano")||choose.equals("Italian")||choose.equals("italiano")||choose.equals("italian"))
 			menuIta(1);
 		else if(choose.equals("English") || choose.equals("english"))
 			menuEng(1);
 		else
-			System.out.println("very interesting as a language but I don't know it");
+			System.out.println(text[textValue+3]); //Stringa 4
 	
 		}while(!choose.equals("Italiano")||!choose.equals("Italian")||!choose.equals("italiano")||!choose.equals("italian")||!choose.equals("English") || !choose.equals("english"));
 	}
 	 public void menuEng(int s)  throws Eccezioni, IOException 
 	    {
+		 	String[] text = es.getFromFile(fileTextPassword,lt);
+		 	int textValue=2;
 	    	String choose = "";
 	    	while(!choose.equals("Exit")) {
-	    	System.out.println("Welcome!");
+	    	System.out.println(text[textValue]); //riga 1
 	    	
 	    	if(s!=-1)
 	    	{
-		    	System.out.println("You look like you're new");
-		    	System.out.println("Do you want me to explain how the program works?");
+		    	System.out.println(text[textValue+2]);//riga 2
+		    	System.out.println(text[textValue+3]);//riga 3
+		    	System.out.println(text[textValue+4]);//riga 4
 		    	choose=scan.nextLine();
 		    	if(choose.equals("si")||choose.equals("yes")||choose.equals("sure"))
 		    	{
-		    		System.out.println("Very simply this ministerial application \nserves to create and take quizzes \nthrough a login you can enter as a professor or student \n teachers can: \ncreate quizzes \ncorrect quizzes \nmake new quizzes \nsee the ratings they had given to previous quizzes \nstudents can \ntake quizzes \nview the results of old quizzes \nrepeat old quizzes");
+		    		int i=19;
+		    		for(textValue=textValue+5; textValue<i; textValue++) //
+		    		System.out.println(text[textValue]);
 		    	}else
-		    	System.out.println("ah... fine -_-");
+		    	System.out.println(text[textValue+17]); //19
 		    	//if 2
-		    	System.out.println("ah... fine -_-");
-		    	System.out.println("Btw, Are you already registered?");
+		    	System.out.println(text[textValue+18]); //20 Btw, Are you already registered?
 		    }else
-		    System.out.println("Are you registered?");
+		    System.out.println(text[textValue+2]); //20 
 	    	choose=scan.nextLine();
 		    if(choose.equals("si")||choose.equals("yes")||choose.equals("sure"))
 		    	login();		
@@ -51,24 +63,31 @@ public class app {
 	    }
     public void menuIta(int s)  throws Eccezioni, IOException 
     {
+    	int textValue=50;
+		String[] text = es.getFromFile(fileTextPassword,lt);
     	String choose = "";
     	do{
-    	System.out.println("Benvenuto!");
+    	System.out.println(text[textValue]); //50
     	
     	if(s!=-1)
     	{
-	    	System.out.println("Hai l'aria di essere nuovo");
-	    	System.out.println("Vuoi che ti spieghi come funziona il programma?");
+	    	System.out.println(text[textValue+1]); //51
+	    	System.out.println(text[textValue+2]); //52
 	    	choose=scan.nextLine();
 	    	if(choose.equals("si")||choose.equals("yes")||choose.equals("sure"))
 	    	{
-	    		System.out.println("Molto semplicemente questa applicazione ministeriale\nserve per creare e fare quiz\nattraverso un login si può entrare come professore o studente\ni docenti possono:\ncreare quiz\ncorreggere i quiz\nfare nuovi quiz\nvedere le valutazioni che avevano dato agli scorsi quiz\ngli studenti possono\nfare quiz\nvedere i risultati dei vecchi quiz\nrifare i vecchi quiz");
-	    	}else
-	    	System.out.println("ah... ok -_-");
+	    		int i=64; //uno stack XD
+	    		for(textValue=textValue+3; textValue<i; textValue++) //
+	    		System.out.println(text[textValue]);
+	    		System.out.println(text[textValue+1]);
+	    	}else {
+	    	System.out.println(text[textValue+16]);
+	    	System.out.println(text[textValue+15]);
+	    	}
 	    	//if 2
-	    	System.out.println("Btw, sei già registrato?");
-	    }else
-	    System.out.println("sei già registrato?");
+	    	
+    	}else
+	    
     	choose=scan.nextLine();
 	    if(choose.equals("si")||choose.equals("yes")||choose.equals("sure"))
 	    login();		
