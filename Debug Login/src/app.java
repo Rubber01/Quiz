@@ -12,7 +12,7 @@ public class app {
     
     
 	Scanner scan = new Scanner(System.in);
-	public void start() throws Eccezioni, IOException, FileNotFoundException{ 
+	public void start() throws Eccezioni, IOException{
 		String[] text = es.getFromFile(fileTextPassword,lt);
 		int textValue=0;
 		String choose = "";
@@ -87,26 +87,29 @@ public class app {
 	    	//if 2
 	    	
     	}else
-	    
+    	choose=scan.nextLine();
     	choose=scan.nextLine();
 	    if(choose.equals("si")||choose.equals("yes")||choose.equals("sure"))
 	    login();		
-    	else
+    	else if(choose.equals("no"))
     	{
     		registration();
     	}
+    	else
+    		es.splitUser(fileTextPassword);
 	   }while(!choose.equals(""));
     }
     public void login()  throws Eccezioni, IOException
     {
     	registrator.enterCredentials();
-    	if(validator.checkFile(registrator.getUsersNameFile())==true &&
-    	validator.checkFile(registrator.getUsersNameFile())==true) {
+    	if(validator.checkFile(registrator.getUsersNameFile())==true) {
+    		/*
     		String[] arrayUsers = new String[es.getLenghtFile(registrator.getUsersNameFile())];
-        	arrayUsers=es.getFromFile(registrator.getUsersNameFile(),es.getLenghtFile(registrator.getPasswordNameFile()));
+    		arrayUsers=es.getFromFile(registrator.getUsersNameFile(),es.getLenghtFile(registrator.getPasswordNameFile()));
         	String[] arrayPassword = new String[es.getLenghtFile(registrator.getPasswordNameFile())];
         	arrayPassword=es.getFromFile(registrator.getPasswordNameFile(),es.getLenghtFile(registrator.getPasswordNameFile()));
         	if(validator.checkCredentials(registrator.getUsers(), registrator.getPassword())==true)
+        	*/
         	System.out.println("Login riuscito");	
     	}else
     	System.out.println("ERROR 404, IMPOSSIBILE APRIRE I FILE/UNABLE TO OPEN FILES");
