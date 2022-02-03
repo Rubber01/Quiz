@@ -3,7 +3,16 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Main {
-
+	/**
+	 * @version v.1.2
+	 * @author Pietro Biasotti, Aimen Essaidi, Islam Ouarem, Matthias Stocchi
+	 * @param args
+	 * @throws Eccezioni
+	 * @throws IOException
+	 * @bug Problema salvataggio Login su file
+	 * @bug Problema ciclo @class App
+	 * 
+	 */
 	public static void main(String[] args)throws Eccezioni, IOException{
 		/*Estrai es=new Estrai();
 		BufferedReader reader;
@@ -47,7 +56,7 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }*/
-		app application =new app();
+		App application =new App();
 		application.start();
     }
 		

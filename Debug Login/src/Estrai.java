@@ -1,13 +1,23 @@
 import java.io.*;
 import java.util.Scanner;
 
-
+/**
+ * 
+ * @author Pietro Biasotti, Islam Ouarem, Matthias Stocchi
+ *
+ *
+ */
 public class Estrai 
-{
+{ 
+	
     public void Estrai () 
     {
         
     }
+    /**
+     * 
+     * @param file Nome fisico del file da stampare
+     */
     public void printFile(String file) {
         //String file = "C:\\Users\\Utente\\Desktop\\okbot.txt"; 
         
@@ -34,6 +44,11 @@ public class Estrai
             e.printStackTrace();
         }
     }
+    /**
+     * 
+     * @param file Nome fisico del file
+     * @return l lunghezza file
+     */
     public int getLenghtFile(String file) {
     	int l=0;
     	BufferedReader reader = null;
@@ -52,7 +67,13 @@ public class Estrai
 		}
     	return l;
     }
-    
+    /**
+     * 
+     * @param file Nome fisico del file
+     * @param l lunghezza file
+     * @return a array di stringhe prese dal file riga per riga
+     * @throws IOException
+     */
     public String[] getFromFile(String file, int l) throws IOException  {
     	Scanner scanner = new Scanner(new File(file)); //creo uno scanner per il file 
         String [] a = new String [100]; //inizializzo l'array
@@ -62,7 +83,15 @@ public class Estrai
              a[i++] = scanner.nextLine();  //l'array tall di posizione i è uguale alla riga i+1
         }
         return a; //passo l'array come valore output 
-  }
+  } 
+    /**
+     * metodo che serve per dividere gli Utenti dalla Password e dal loro Ruolo (Professore/Studente) visco che la formattazione nel file è Utente;Password;Ruolo... è ancora in fase di sviluppo
+     * @param file Nome fisico del file
+     * @throws Eccezioni
+     * @throws IOException
+     * @throws ArrayIndexOutOfBoundsException
+     *
+     */
     public void splitUser(String file)throws Eccezioni, IOException, ArrayIndexOutOfBoundsException{
     	Estrai es=new Estrai();
 		BufferedReader reader;
