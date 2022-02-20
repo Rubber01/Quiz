@@ -1,0 +1,3 @@
+di che colore è il cielo?;rosso;verde;giallo;blu;blu
+quanto fa 2+2?;1;2;3;4;4
+quanto fa 4x4?;8;12;16;20;16

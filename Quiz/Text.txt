@@ -1,0 +1,36 @@
+Select the language to use:;Select the language to use:
+Italian(Italiano) English;Italian(Italiano) English
+not rate us badly, we are programmers not experts in languages*;not rate us badly, we are programmers not experts in languages*
+very interesting as a language but I don't know it;very interesting as a language but I don't know it
+Welcome!;Benvenuto!
+You look like you're new;Hai l'aria di essere nuovo
+Do you want me to explain how the program works?;Vuoi che ti spieghi come funziona il programma?
+Very simply this ministerial application;Molto semplicemente questa applicazione ministeriale
+serves to create and take quizzes;serve per creare e fare quiz
+through a login you can enter as a professor or student;attraverso un login si può entrare come professore o studente
+teachers can:;i docenti possono:
+create quizzes;creare quiz 
+correct quizzes;correggere i quiz
+make new quizzes;fare nuovi quiz 
+see the ratings they had given to previous quizzes;vedere le valutazioni che avevano dato agli scorsi quiz 
+students can:;gli studenti possono:
+take quizzes;fare quiz
+view the results of old quizzes;vedere i risultati dei vecchi quiz
+repeat old quizzes;rifare i vecchi quiz
+ah... fine -_-;ah... ok -_-
+Btw, Are you already registered?;Btw, sei già registrato?
+The file related to the password dosn't exist!;Il file relativo alla password non esiste!
+File created!;File creato!
+Enter the username:;Inserisci il nome utente:
+you cannot use this name;non puoi usare questo nome
+Enter your password:;Inserisci la tua password:
+you cannot use this password;non è possibile utilizzare questa password
+Enter your role are you a Student or a Teacher:;Inserisci il tuo ruolo sei Studente o Docente:
+got the input!;Input ottenuto!
+Account saved successfully!;Account salvato con successo!
+you cannot use this role;Non puoi usare questo Ruolo
+Login complete!;Login riuscito
+ERROR 404 IT'S IMPOSSIBLE OPEN THIS FILES;ERROR 404, IMPOSSIBILE APRIRE I FILE
+Welcome, you're logged as Teacher                                                              ;Benvenuto , hai fatto l'accesso come Docente                                                              
+Welcome, you're logged as Student                                                              ;Benvenuto , hai fatto l'accesso come Studente                                                              
+Select one option;Seleziona una opzione
