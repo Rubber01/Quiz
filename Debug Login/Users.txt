@@ -1,4 +1,0 @@
-Utente;Password;Studente
-Stocchi;Basta;Docente
-Saccani;Pippo;Docente
-Pietro;OwO;Studente
