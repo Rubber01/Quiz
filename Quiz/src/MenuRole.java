@@ -28,7 +28,6 @@ public class MenuRole {
 		
 		if(k==1) {
 			for(int j=0; j<5; j++) {
-				System.out.println("in culo");
 				quiz.WriteQuiz();
 
 			}
@@ -42,7 +41,7 @@ public class MenuRole {
 			quiz.printScore(quiz.getScoreName());
 		 if(k==5)
 			return;
-		//12 in giù
+		//12 in giÃ¹
 	
 }
 	/**
@@ -68,6 +67,6 @@ public class MenuRole {
 		System.out.println(text[lingua][textValue+20]+registrator.getUsers());
 		k=scan.nextInt();
 		
-		//17 in giù
+		//17 in giÃ¹
 	}
 }
